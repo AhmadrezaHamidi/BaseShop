@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!--<PackageReference Include="ErrorOr" Version="2.0.1" />-->
+		<PackageReference Include="MediatR" Version="12.2.0" />
+		<!--<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />-->
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+	</ItemGroup>
+	
+	
+	<ItemGroup>
+    <Folder Include="CQRS\Commands\" />
+    <Folder Include="CQRS\Queries\" />
+    <Folder Include="CQRS\Validators\" />
+    <Folder Include="Models\InputDtos\" />
+    <Folder Include="Models\OutPutDtos\" />
+  </ItemGroup>
+	
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\AhmadShop.Common\AhmadShop.Common.csproj" />
+	  <ProjectReference Include="..\AhmadShop.Domain\AhmadShop.Domain.csproj" />
+	</ItemGroup>
+
+</Project>
